@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/tobee/sqlcipher-build/sqlcipher/build/dist
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLCipher
+Description: SQL database engine
+Version: 3.15.2
+Libs: -L${libdir} -lsqlcipher
+Libs.private: -ldl -lcrypto -lcrypto -L/mingw/lib -lgcc -lgdi32
+Cflags: -I${includedir}/sqlcipher
